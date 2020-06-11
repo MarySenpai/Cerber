@@ -1,0 +1,539 @@
+@font-face {
+	font-family: 'IBMPlexSans400';
+	src: url('fonts/IBMPlexSans-Regular.ttf') format('');
+}
+
+@font-face {
+	font-family: 'Mosterrat500';
+	src: url('fonts/Montserrat-Medium.ttf') format('');
+}
+
+@font-face {
+	font-family: 'Mosterrat600';
+	src: url('fonts/Montserrat-SemiBold.ttf') format('');
+}
+
+@font-face {
+	font-family: 'Mosterrat700';
+	src: url('fonts/Montserrat-Bold.ttf') format('');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/**/
+/**/
+/*ОБЩИЕ ОФОРМЛЕНИЯ*/
+/**/
+/**/
+
+.button {
+	display: inline-block;
+	width: 230px;
+	height: 60px;
+	border: none;
+	border-radius: 30px;
+	color: white;
+	font-family: 'Mosterrat600', sans-serif;
+	font-size: 18px;
+	box-shadow: 3px 3px 10px -2px rgba(0,0,0,0.35);
+	transition: all 1s;
+	background-size: 200% auto;
+	background-image: linear-gradient(to right, #025188 0%,#5174ab 50%,#025188  100%);
+}
+
+.button:hover {
+	transition-property: background, color, border-color, box-shadow;
+	transition-timing-function: ease;
+	transition-duration: 0.5s;
+    background-position: right center;
+}
+
+.text {
+	display: inline-block;
+	width: 400px;
+	height: 50px;
+	border: none;
+	box-shadow: 3px 3px 10px -3px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/**/
+/**/
+/*ШАПКА*/
+/**/
+/**/
+
+header {
+	font-family: 'Mosterrat500', sans-serif;
+	color: white;
+	list-style: none;
+}
+
+header h2 {
+	font-family: 'Mosterrat700';
+	font-size: 23px;
+	text-transform: uppercase; 
+	line-height: 1.7;
+	text-shadow: 3px 3px 5px black;
+}
+
+.header_bg {
+	background-image: url(/img/bg.jpg);
+	background-size: 100%;
+	height: 940px;
+	width: 100%;
+    background-position: center;
+}
+
+.header_container {
+	position: relative;
+	top: 50px;
+	margin: 0 90px;
+	height: 830px;
+}
+
+/*ЛОГО*/
+
+.logo {
+	position: absolute;
+	width: 620px;
+	text-shadow: 3px 3px 5px black;
+}
+
+.logo_img {
+	height: 145px;
+}
+
+.logo_label {
+	position: absolute;
+	top: 0px;
+	left: 180px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-weight: 600;
+	font-size: 70px;
+	line-height: 1.3;
+}
+
+.logo_text {
+	position: absolute;
+	top: 98px;
+	width: 500px;
+	font-size: 21px;
+}
+
+/*ОПИСАНИЕ*/
+
+.desc {
+	position: absolute;
+	bottom: 0;
+	list-style-position: inside;
+	font-family: 'Mosterrat600', sans-serif;
+	line-height: 2.1;
+	font-size: 18px;
+	text-shadow: 3px 3px 5px black;
+}
+
+.header_icons_list {
+	margin: 55px 0 15px;
+	padding-bottom: 40px;
+	line-height: 1.7;
+}
+
+.header_icons_list li {
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.header_icons_list div {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+    background-image: linear-gradient(135deg,#3477b0 0%,#435889 54.55%,#455271 100%);
+	display: inline-block;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header_icons_list .fa {
+	font-size: 40px;
+	margin-top: 20px;
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header_icons_list p {
+	margin-top: 25px;
+}
+
+/*КОНТАКТЫ*/
+
+.links {
+	top: 10px;
+	position: absolute;
+	right: 0;
+	height: 130px;
+}
+
+.links li {
+	display: inline-block;
+	margin-left: 60px;
+	text-shadow: 2px 2px 5px black;
+	line-height: 2;
+}
+
+.links a:visited{
+	color: white;
+}
+
+.button_cabinet {
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+
+.button_call {
+	position: absolute;
+	top: 60px;
+	right: 290px;
+}
+
+/*EMAIL-РАССЫЛКА*/
+
+.email {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 400px;
+	height: 300px;
+}
+
+.news {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text_email {
+	position: absolute;
+	top: 130px;
+	background: #F2F2F2;
+}
+
+.button_email {
+	position: absolute;
+	bottom: 10px;
+	width: 400px;
+}
+
+/*НАВИГАЦИЯ*/
+
+nav {
+	text-align: center;
+	text-transform: uppercase;
+	padding: 25px 0;
+	font-family: 'Mosterrat700', sans-serif;
+	letter-spacing: 1px;
+	box-shadow: 0 0px 100px rgba(0,0,0,0.25);
+	position: relative;
+}
+
+nav a{
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 12px 30px;
+	font-size: 16px;
+}
+
+nav a:hover{
+	color: #386B94;
+}
+
+/**/
+/**/
+/*КОНТЕНТ*/
+/**/
+/**/
+
+body {
+	font-family: 'IBMPlexSans400', sans-serif;
+	list-style-position: inside;
+	line-height: 1.7;
+	font-size: 18px;
+}
+
+main p {
+	margin-bottom: 30px;
+}
+
+main h1 {
+	margin-bottom: 40px;
+	font-size: 32px;
+	font-family: 'Mosterrat600', sans-serif;
+	text-align: center;
+
+}
+
+main h2 {
+	margin-bottom: 35px;
+	font-size: 22px;
+	font-family: 'Mosterrat700', sans-serif;
+}
+
+.container {
+	width: 1100px;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	margin: auto;
+	position: relative;
+	display: block;
+}
+
+/*КАЧЕСТВО*/
+
+.quality {
+	position: absolute;
+	top: 370px; 
+	right: 0;
+}
+
+/*ЗАЧЕМ*/
+
+.block_cam {
+	width: 100%;
+	padding-top: 30px;
+	height: 480px;
+	background-color: #DFEAF5;
+}
+
+.block_cam p {
+	width: 500px;
+	display: inline-block;
+}
+
+.cam_img {
+	position: relative;
+	width: 500px;
+	float: right;
+	top: -100px;
+}
+
+/*ВОЗМОЖНОСТИ*/
+
+.icons_list {
+	margin-top: -10px;
+	list-style: none;
+}
+
+.icons_list li {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 271px;
+	margin-top: 50px;
+}
+
+.icons_list li:nth-child(5) {
+	margin-left: 140px;
+}
+
+.icons_list_circle {
+	margin: auto;
+	width: 96px;
+	height: 96px;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	background-image: linear-gradient(135deg,#3477b0 0%,#435889 54.55%,#455271 100%);
+}
+
+.icons_list_title {
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.4;
+	color: #455271;
+	font-family: 'Mosterrat700', sans-serif;
+}
+
+/*ЗВОНОК*/
+
+.call {
+	position: relative;
+	background: #e3e3e3;
+	width: 100%;
+	height: 500px;
+	top: -15px;
+	border: 1px solid #dddddd;
+	border-radius: 30px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+	margin-bottom: 30px;
+}
+
+.call img {
+	position: absolute;
+	height: 550px;
+	top: -50px;
+	left: 30px;
+}
+
+.call_container {
+	position: absolute;
+	top: 60px;
+	left: 430px;
+	width: 600px;
+	text-align: center;
+}
+
+.call_container span {
+	font-family: 'Mosterrat500', sans-serif;
+	font-size: 13px;
+}
+
+.button_call2 {
+	margin-top: 40px;
+}
+
+/**/
+/**/
+/*ФУТЕР*/
+/**/
+/**/
+
+footer {
+	background: linear-gradient(90deg, rgba(12,31,56,1) 0%, rgba(14,70,130,1) 100%);
+	color: white;
+}
+
+footer a:visited {
+	color: white;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.footer_menu {
+	display: inline-block;
+	width: 720px;
+	height: 220px;
+	list-style: none;
+	border-right: 2px solid white;
+	vertical-align: top;
+}
+
+.footer_menu_item {
+	margin: 0 50px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer_menu_item:first-child{
+	margin: 0;
+}
+.footer_contacts {
+	left: 90px;
+	position: relative;
+	display: inline-block;
+	line-height: 2.1;
+}
+
+.rights {
+	padding-top:15px;
+	text-align: center;
+	height: 50px;
+	background: #000;
+}
+
+/**/
+/**/
+/*КАТАЛОГ*/
+/**/
+/**/
+
+.categories {
+	list-style: none;
+}
+
+.categories li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.category_select {
+	border: solid;
+}
+
+.products_list {
+	margin-top: 50px;
+	list-style: none;
+}
+
+.products_list img {
+	width: 260px;
+}
+
+.products_list li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 62px;
+	margin-bottom: 50px;
+	padding: 30px;
+	width: 260px;
+	height: 450px;
+	text-align: center;
+	background: white;
+	border: 1px solid #dddddd;
+	border-radius: 30px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+
+.products_list li:nth-child(3n){
+	margin-right: 0px;
+}
+
+.product-card {
+  position: relative;
+
+  display: flex;
+  width: 132px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 124px 12px 12px;
+
+  flex-direction: column;
+
+  background-color: gray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*ИНФО О ТОВАРЕ*/
+
+.product_info {
+	margin-top: 30px;
+}
+
+.product_info img {
+	width: 500px;
+}
+
+.product_desc {
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 60px;
+}
